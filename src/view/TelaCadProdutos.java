@@ -39,11 +39,8 @@ public class TelaCadProdutos extends javax.swing.JFrame {
         txtPreco = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         btnBusca = new javax.swing.JButton();
-        boxMercado = new javax.swing.JComboBox<>();
+        boxMercado = new javax.swing.JComboBox();
         txtQtd_estoque = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        btnEditar = new javax.swing.JButton();
         btnSalvar = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
@@ -108,6 +105,7 @@ public class TelaCadProdutos extends javax.swing.JFrame {
             }
         });
 
+        boxMercado.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxMercado.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
@@ -115,6 +113,28 @@ public class TelaCadProdutos extends javax.swing.JFrame {
                 boxMercadoAncestorAdded(evt);
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+
+        txtQtd_estoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        btnSalvar.setBackground(new java.awt.Color(255, 255, 255));
+        btnSalvar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/novo-arquivo.png"))); // NOI18N
+        btnSalvar.setText("Cadastrar");
+        btnSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarActionPerformed(evt);
+            }
+        });
+
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-de-seta.png"))); // NOI18N
+        jButton4.setText("Voltar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
             }
         });
 
@@ -126,30 +146,44 @@ public class TelaCadProdutos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(painel_dadosLayout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(boxMercado, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(painel_dadosLayout.createSequentialGroup()
-                        .addComponent(jLabel28)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnBusca))
-                    .addGroup(painel_dadosLayout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel21)
+                                .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addGroup(painel_dadosLayout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(jLabel23)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(painel_dadosLayout.createSequentialGroup()
+                                .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnBusca))
+                            .addGroup(painel_dadosLayout.createSequentialGroup()
+                                .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(painel_dadosLayout.createSequentialGroup()
+                                        .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(txtPreco)
+                                            .addComponent(txtDescricao, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painel_dadosLayout.createSequentialGroup()
+                                        .addComponent(btnSalvar)
+                                        .addGap(29, 29, 29)))
+                                .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton4)
+                                    .addComponent(jLabel16))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtQtd_estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(painel_dadosLayout.createSequentialGroup()
                         .addGap(8, 8, 8)
-                        .addComponent(jLabel23)
+                        .addComponent(jLabel18)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(68, 68, 68)
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtQtd_estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(347, Short.MAX_VALUE))
+                        .addComponent(boxMercado, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
+
+        painel_dadosLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnSalvar, jButton4});
+
         painel_dadosLayout.setVerticalGroup(
             painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(painel_dadosLayout.createSequentialGroup()
@@ -168,49 +202,20 @@ public class TelaCadProdutos extends javax.swing.JFrame {
                     .addComponent(jLabel23)
                     .addComponent(jLabel16)
                     .addComponent(txtQtd_estoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(boxMercado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addGroup(painel_dadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSalvar)
+                    .addComponent(jButton4))
+                .addContainerGap())
         );
 
+        painel_dadosLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnSalvar, jButton4});
+
         jTabbedPane1.addTab("Dados do Produto", painel_dados);
-
-        jButton2.setText("NOVO");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("EXCLUIR");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        btnEditar.setText("EDITAR");
-        btnEditar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditarActionPerformed(evt);
-            }
-        });
-
-        btnSalvar.setText("SALVAR");
-        btnSalvar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalvarActionPerformed(evt);
-            }
-        });
-
-        jButton4.setText("VOLTAR");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -218,39 +223,14 @@ public class TelaCadProdutos extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jTabbedPane1)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(196, 196, 196)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(btnSalvar)
-                .addGap(30, 30, 30)
-                .addComponent(btnEditar)
-                .addGap(29, 29, 29)
-                .addComponent(jButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnEditar, btnSalvar, jButton2, jButton3, jButton4});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSalvar)
-                    .addComponent(btnEditar)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
-                .addGap(50, 50, 50))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnEditar, btnSalvar, jButton2, jButton3, jButton4});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -280,42 +260,6 @@ public class TelaCadProdutos extends javax.swing.JFrame {
         //listar();
     }//GEN-LAST:event_formWindowActivated
 
-    private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
-        //botão responsável por alterar os campos
-        Clientes obj = new Clientes();
-
-        obj.setNome(txtNome.getText());
-        
-       
-        obj.setEndereco(txtPreco.getText());
-        
-
-        ClientesDAO dao = new ClientesDAO();
-
-        dao.alterarCliente(obj);
-
-        new Utilitarios().limpaTela(painel_dados);
-
-    }//GEN-LAST:event_btnEditarActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        //botão responsável por excluir os dados do campo
-        Clientes obj = new Clientes();
-
- 
-
-        ClientesDAO dao = new ClientesDAO();
-
-        dao.excluirCliente(obj);
-
-        new Utilitarios().limpaTela(painel_dados);
-
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new Utilitarios().limpaTela(painel_dados);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void btnBuscaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscaActionPerformed
         //botão que busca o cliente pelo nome
         
@@ -343,7 +287,7 @@ public class TelaCadProdutos extends javax.swing.JFrame {
         boxMercado.removeAll();
        
         for(Mercados m: listademercados){
-            boxMercado.addItem(m.getNome());
+            boxMercado.addItem(m);
         }
     }//GEN-LAST:event_boxMercadoAncestorAdded
 
@@ -396,12 +340,9 @@ public class TelaCadProdutos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> boxMercado;
+    private javax.swing.JComboBox boxMercado;
     private javax.swing.JButton btnBusca;
-    private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnSalvar;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel16;

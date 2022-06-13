@@ -238,7 +238,7 @@ public class TelaLogin extends javax.swing.JFrame {
                     //desabilitar algumas funções
                     //telamenu.btnCadastroMercados.setEnabled(false);
                     telamenu.jmenuProdutos.setVisible(false);
-                    //telamenu.jmenuVendas.setVisible(false);
+                    telamenu.jmenuVendass.setVisible(false);
                     telamenu.setVisible(true);
                     dispose();
                 }

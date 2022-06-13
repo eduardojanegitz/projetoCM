@@ -3,18 +3,34 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaPontoDeVendas.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaMercadoRecomendado.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaHistorico.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaLogin.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaCadLogin.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/model/ItemVenda.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaMenu.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/categorias/CategoriaBebidas1.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaVendasPorData.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/mercados/MercadoTouche.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/mercados/Mercado_Mysterio.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/model/Mercados.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/model/Produtos.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaPrecos.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/NewJFrame1.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaMenu1.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/controller/ItemVendaDAO.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaEstoque.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaVendasPorData.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaDetalheVenda.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaPagamentos.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaCadClientes.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaCadProdutos.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaPontoDeVendas.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/controller/ProdutosDAO.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaConsultaProdutos.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaLogin.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaCadClientesM.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaMenu.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaHistorico.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/controller/VendasDAO.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/controller/MercadoDAO.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/categorias/CategoriaBebidas1.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/mercados/Mercado_AlohaStore.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaMinhaConta.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/projetoCoopMarket/src/view/TelaDetalheVenda.java</file>
         </group>
     </open-files>
 </project-private>

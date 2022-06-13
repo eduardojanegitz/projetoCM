@@ -63,7 +63,7 @@ public class MercadoDAO {
        public void cadastrarMercados(Mercados obj) {
 
         try {
-            String sql = "INSERT INTO tb_mercados VALUES  (null, ?,?,?,?,?,?,?,?,?,?,?);";
+            String sql = "INSERT INTO tb_mercados VALUES (null, ?,?,?,?,?,?,?,?,?,?,?);";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, obj.getNome());
             stmt.setString(2, obj.getCnpj());

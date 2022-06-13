@@ -92,7 +92,7 @@ public class TelaConsultaProdutos extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 204));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Consulta de Produtos");
 
@@ -101,16 +101,16 @@ public class TelaConsultaProdutos extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addContainerGap()
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGap(29, 29, 29))
         );
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
